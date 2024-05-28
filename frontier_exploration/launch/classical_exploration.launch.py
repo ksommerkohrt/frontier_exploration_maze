@@ -11,7 +11,7 @@ def generate_launch_description():
             output='screen',
             parameters=[
                 {"region_size_thresh_": 25}, # number of points
-                {"robot_width_": 0.5}, # meters
+                {"robot_width_": 0.1}, # meters
                 {"occupancy_map_topic_": "map"} # occupany grid map topic
             ]
         ),
