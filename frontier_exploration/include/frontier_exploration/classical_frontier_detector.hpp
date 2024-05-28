@@ -40,7 +40,7 @@ class FrontierExplorer : public rclcpp::Node
 
     private:
         int region_size_thresh_ {1};
-        float robot_width_ {0.1};
+        float robot_width_ {0.15};
 
         std::string occupancy_map_topic_ {"map"}; //"global_costmap/costmap"
         
