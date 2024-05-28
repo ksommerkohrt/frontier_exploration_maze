@@ -15,7 +15,7 @@ FrontierExplorer::FrontierExplorer()
 {
     // Get parameters
     region_size_thresh_ = this->declare_parameter("region_size_thresh", 12);
-    robot_width_ = this->declare_parameter("robot_width", 0.5);
+    robot_width_ = this->declare_parameter("robot_width", 0.15);
     occupancy_map_topic_ = this->declare_parameter("occupancy_map_msg", "map");
 
     // Subscribers/Publichers/Service setup
