@@ -9,6 +9,7 @@
  *
  */
 #include "frontier_exploration/classical_frontier_detector.hpp"
+#include "tf2_geometry_msgs/tf2_geometry_msgs.hpp"
 
 FrontierExplorer::FrontierExplorer()
 : Node("frontier_explorer")
