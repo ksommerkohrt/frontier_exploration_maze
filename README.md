@@ -30,20 +30,5 @@ To run the exploration node:
 ```
 # Start cognipilot simulation
 
-ros2 launch frontier_exploration exploration.launch.py
+ros2 launch frontier_exploration classical_exploration.launch.py
 
-### Training Data Collection
-
-1. Launch a simalation or real robot that publishes occupancy grid maps to the `/map`  topic.
-2. Then `ros2 run frontier_exploration collection_node`
-   - This will preprocess the map through simple filtering operations
-   - Save a map after the robot has travelled beyond a distance threshold
-
-
-## Dataset
-
-<a href="https://universe.roboflow.com/cas726/learned-frontier-detection">
-    <img src="https://app.roboflow.com/images/download-dataset-badge.svg"></img>
-</a>
-
-Our dataset is available at the link above.
