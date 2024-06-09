@@ -7,7 +7,7 @@ A frontier exploration module implementied with ROS 2, C++, and Python. Based on
 B. Yamauchi, "A frontier-based approach for autonomous exploration," Proceedings 1997 IEEE International Symposium on Computational Intelligence in Robotics and Automation CIRA'97. 'Towards New Computational Principles for Robotics and Automation', Monterey, CA, USA, 1997, pp. 146-151, doi: 10.1109/CIRA.1997.613851.
 ```
 
-![preprocessedMap_frontierMarkers](https://github.com/adrian-soch/frontier_exploration/assets/6884645/2212f6f5-046a-4d85-aeaf-ed6245907e1f)
+*Please note that this repository is a forked version of https://github.com/adrian-soch/frontier_exploration.git with minor edits to create a sample solution for a maze competition
 
 > **Frontier Exploration**: Contains nodes for autonomous exploration, interfaces with the nav2 stack.
 
@@ -28,28 +28,9 @@ colcon build
 
 To run the exploration node:
 ```
-# Start rosbag or robot simulation or real robot
+# Start cognipilot simulation
 
 ros2 launch frontier_exploration exploration.launch.py
-
-# The node can be run independantly via ros2 run
-# And can be tested with:
-ros2 service call  /frontier_pose frontier_interfaces/srv/FrontierGoal goal_rank:\ 0
-#requester: making request: frontier_interfaces.srv.FrontierGoal_Request(goal_rank=0)
-
-```
-
-Output can be visualized in rviz with the frontier map and frontier region markers.
-
-To run the full exploration system:
-
-```
-# Start rosbag or robot simulation or real robot
-ros2 launch frontier_exploration lite_turtlebot_full_stack.launch.py
-
-# Launch the frontier exploration node
-ros2 launch frontier_exploration exploration.launch.py
-```
 
 ### Training Data Collection
 
